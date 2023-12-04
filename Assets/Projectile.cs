@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Projectile : MonoBehaviour
 {
 
     public void Init(Vector2 velocity)
@@ -14,7 +14,7 @@ public class NewBehaviourScript : MonoBehaviour
             return;
         }
 
-        rb2.velocity = velocity;
+        rb2.velocity = velocity + new Vector2(0, -5);
     }
 
 

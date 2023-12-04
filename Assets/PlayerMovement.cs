@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movementplayer : MonoBehaviour
-{
+
     public class PlayerMovement : MonoBehaviour
     {
         //Serialized Fields for attributes
@@ -58,4 +57,4 @@ public class Movementplayer : MonoBehaviour
 
 
     }
-}
+
