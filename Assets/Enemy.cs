@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -29,6 +30,13 @@ public class Enemy : MonoBehaviour
     {
         timer -= Time.deltaTime;
         ZigZagMovement();
+        
+        if(transform.position.y >= 4)
+        {
+            string currentSceneName = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene(currentSceneName);
+        }
+        
     }
 
     void ZigZagMovement()
@@ -42,7 +50,9 @@ public class Enemy : MonoBehaviour
 
         rigidBody.velocity = velocity;
 
+        
+        
     }
 
-
+   
 }

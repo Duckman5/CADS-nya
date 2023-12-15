@@ -34,7 +34,7 @@ public class Shooter : MonoBehaviour
 
         if (( X == KeyCode.None || Input.GetKeyDown(X)) && timer <= 0)
         {
-            Vector2 pos = transform.position;
+            Vector2 pos = transform.position;  
             if (spawnLocation != null)
             {
                 pos = spawnLocation.position;
@@ -44,6 +44,8 @@ public class Shooter : MonoBehaviour
             p.Init(fireDirection);
 
             timer = coolDown;
+           
+
         }
     }
 }

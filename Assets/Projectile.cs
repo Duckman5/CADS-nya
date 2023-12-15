@@ -14,13 +14,6 @@ public class Projectile : MonoBehaviour
             return;
         }
 
-        rb2.velocity = velocity + new Vector2(0, -5);
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        rb2.velocity = velocity + new Vector2(0, -5); 
     }
 }
